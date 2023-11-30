@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(./images/alberto-restifo-cFplR9ZGnAk-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  word-spacing: -2px;
+  text-align: center;
+}
+
+.big-text {
+  font-size: 4rem;
+  line-height: 1;
+  margin-top: 40px;
+  margin: 0 1.5rem;
+  font-weight: bold;
+  animation: bounce 1s infinite; /* Add a continuous bounce animation */
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0); /* Bounce at the top and bottom */
+  }
+  40% {
+    transform: translateY(-20px); /* Bounce higher in the middle */
+  }
+  60% {
+    transform: translateY(-10px); /* Bounce less in between */
+  }
+}
+
+.countdown {
+  text-align: center;
+}
+
+.countdown span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-top: 4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    word-spacing: -2px;
+  }
+
+  .big-text {
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 1.5rem;
+    font-weight: bold;
+    animation: bounce 1s infinite;
+  }
+
+  .countdown-timer__container {
+    display: flex;
+  }
+
+  .countdown {
+    margin: 0 1rem; /* Adjust margin between countdown elements */
+  }
+}
