@@ -7,5 +7,40 @@
 body {
   margin: 0;
   padding: 0;
+  background: url(./images/alberto-restifo-cFplR9ZGnAk-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  word-spacing: -2px;
+}
+
+.countdown-timer__container {
+  display: flex;
+}
+
+.big-text {
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 1.5rem;
+  font-weight: bold;
+}
+
+.countdown {
+  text-align: center;
+}
+
+.countdown span {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
